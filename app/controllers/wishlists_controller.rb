@@ -1,6 +1,11 @@
 class WishlistsController < ApplicationController
   # GET /wishlists
   # GET /wishlists.json
+
+  def home
+
+  end
+
   def index
     @wishlists = Wishlist.all
 

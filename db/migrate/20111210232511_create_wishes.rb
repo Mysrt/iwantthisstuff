@@ -1,11 +1,11 @@
 class CreateWishes < ActiveRecord::Migration
   def change
     create_table :wishes do |t|
-      t.name :string
-      t.description :string
-      t.link :string
-      t.purchases :boolean, :default => false
-      t.wishlist_id :integer
+      t.string :name
+      t.string :description
+      t.string :link
+      t.boolean :purchased, :default => false
+      t.integer :wishlist_id
 
       t.timestamps
     end
