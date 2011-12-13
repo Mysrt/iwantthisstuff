@@ -2,23 +2,54 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size:   13px;
   line-height: 18px;
-  background: #A33;
+  background: #AFA;
   margin: 0; padding: 0;
 }
 div.banner {
   font-family: helvetica;
   background: #FFF;
-  margin: 24px, 50px, 0px, 50px;
+  width: 100%;
+  padding: 10px 200px 0px 200px;
   height: 100px;
-  overflow: auto;
 }
+
 .top_container {
-  background: #A33;
-  height: 450px;
+  background: #363;
+  height: 650px;
   font-size: 18px;
 }
 
-.bot_container {
-  background: #363;
-  height: 400px;
+.bubble_wrapper {
+  position: relative;
+  background: #622;
+  float:right;
+  width: 850px;
+  height: 600px;
+  bottom: 450px;
+  margin-right: 500px;
 }
+
+.hero_image {
+  position: absolute;
+  z-index: 20;
+  top: 150px;
+  bottom: 450px;
+  left: 200px;
+}
+
+.hero_bubble {
+  padding: 15px;
+	background:rgba(255,255,255,.3);
+}
+
+.hero_inner {
+  padding: 10px;
+  height: 550px;
+  background: #622;
+}
+
+div.rounded {
+  -moz-border-radius: 20px !important;
+  -webkit-border-radius: 20px !important;
+}
+
